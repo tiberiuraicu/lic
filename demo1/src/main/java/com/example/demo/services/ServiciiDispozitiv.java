@@ -8,6 +8,7 @@ import com.example.demo.entites.Consumator;
 import com.example.demo.entites.Dispozitiv;
 import com.example.demo.entites.Notificare;
 import com.example.demo.entites.Senzor;
+import com.example.demo.entites.User;
 import com.example.demo.repositories.DispozitivRepository;
 
 
@@ -25,4 +26,8 @@ public class ServiciiDispozitiv {
 	public void addConsumator(Consumator consumator, Dispozitiv dispozitiv) {
 		dispozitiv.getConsumatori().add(consumator);
 	}
+	public void addUser(User user, Dispozitiv dispozitiv) {
+		dispozitiv.getUseri().add(user);
+	}
+	
 }

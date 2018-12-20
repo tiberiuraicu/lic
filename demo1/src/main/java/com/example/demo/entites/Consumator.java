@@ -30,10 +30,6 @@ public class Consumator {
 		return id;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
 	public String getTip() {
 		return tip;
 	}
@@ -80,6 +76,12 @@ public class Consumator {
 
 	public void setCircuit(String circuit) {
 		this.circuit = circuit;
+	}
+
+	@Override
+	public String toString() {
+		return "Consumator [id=" + id + ", tip=" + tip + ", idDispozitiv=" + idDispozitiv + ", putereConsumata="
+				+ putereConsumata + ", dataOra=" + dataOra + ", stare=" + stare + ", circuit=" + circuit + "]";
 	}
 
 }

@@ -9,7 +9,7 @@ import com.example.demo.entites.User;
 // CRUD refers Create, Read, Update, Delete
 
 public interface SenzorRepository extends JpaRepository<Senzor, Integer> {
-	
 
+	Senzor getSenzorByNume(String nume);
 
 }

@@ -10,7 +10,7 @@ import com.example.demo.entites.Dispozitiv;
 
 public interface DispozitivRepository extends JpaRepository<Dispozitiv, Integer> {
 
-	Dispozitiv findByName(String string);
+	Dispozitiv getDispozitivByName(String name);
 	
 
 

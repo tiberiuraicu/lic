@@ -8,6 +8,6 @@ import com.example.demo.entites.User;
 
 public interface UserRepository extends JpaRepository<User, Integer> {
 	
-     User findByNume(String name);
+     User getUserByNume(String name);
 
 }
