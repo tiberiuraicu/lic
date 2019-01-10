@@ -17,6 +17,7 @@ import com.example.demo.entites.Notificare;
 import com.example.demo.entites.Rol;
 import com.example.demo.entites.Senzor;
 import com.example.demo.entites.User;
+import com.example.demo.repositories.ConsumatorRepository;
 import com.example.demo.repositories.DispozitivRepository;
 import com.example.demo.repositories.UserRepository;
 import com.example.demo.services.ServiciiDispozitiv;
@@ -30,6 +31,8 @@ public class HelloJpaApplication implements CommandLineRunner {
 	private UserRepository userRepository;
 	@Autowired
 	private DispozitivRepository dispozitivRepository;
+	@Autowired
+	private ConsumatorRepository consumatorRepository;
 
 	private ServiciiDispozitiv serviciiDispozitiv = new ServiciiDispozitiv();
 	private ServiciiUser serviciiUser = new ServiciiUser();
@@ -148,8 +151,14 @@ public class HelloJpaApplication implements CommandLineRunner {
 		 for (Dispozitiv book : dispozitivRepository.findAll()) {
 			 logger.info(book.toString());
 			
+			 
 			 }
-
+		 for (Consumator book : 	 consumatorRepository.findAll()) {
+			 System.out.println(book.toString());
+			
+			 
+			 }
+	
 		
 
 	

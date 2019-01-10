@@ -1,8 +1,10 @@
-package com.example.demo.repositories;
+package com.server.Server.database.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.demo.entites.Notificare;
+import com.server.Server.entites.Notificare;
+
+
 
 
 // This will be AUTO IMPLEMENTED by Spring into a Bean called userRepository
