@@ -176,7 +176,7 @@ System.out.println("putere consumata"+putereConsumata);
 			 
 			 }
 	}
-
+//de inteles/refacut
 	public List<List<Circuit>> getAllSubsets(List<Circuit> input) {
 		int allMasks = 1 << input.size();
 		List<List<Circuit>> output = new ArrayList<List<Circuit>>();

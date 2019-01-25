@@ -6,8 +6,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 import com.server.Server.cep.generator.AdaugaLaConsumEventGenerator;
 import com.server.Server.cep.generator.PrizaNefolositaEventGenerator;
@@ -28,6 +30,7 @@ import com.server.Server.entites.Senzor;
 import com.server.Server.entites.User;
 
 @SpringBootApplication
+
 
 public class ServerApplication implements CommandLineRunner {
 
